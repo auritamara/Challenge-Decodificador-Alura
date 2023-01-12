@@ -1,0 +1,363 @@
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+#background{
+  background: url("couro_azulclaro.jpg");
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+  margin: 0;
+  background: url("couro_azulclaro.jpg");
+}
+
+header h2{
+  color: #0a3871;
+}
+
+.caixa{
+  position: relative;
+	width: 100%;
+}
+
+.logoAlura{
+  margin: 4% 4%;
+  height: 4%;
+  float: left;
+}
+
+.titulo{
+  float: right;
+  margin: 5% 11%;
+  height: 10%;
+  font-size: 2em;
+}
+
+main{
+  display: flex;
+  padding: 0;
+  height: 30em;
+  padding: 2% 10% 2% 10%;
+  
+}
+
+.caixaDeTexto{
+  margin: 0;
+  padding: 2% 0 2% 0;
+  border: none;
+  background: none;
+  resize: none;
+  height: 85%;
+  width: 100%;
+}
+
+textarea {
+  border: none;
+  background: none;
+  resize: none;
+  height: 85%;
+  width: 95%;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5em;
+  transition: 0.4s transform;
+  color: #013f69
+}
+
+textarea.textoEscrito:hover{
+  border: 3px solid #081a2a;
+  border-radius: 15px;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+textarea::placeholder {
+  font-size: 1em;
+  color: #0a3871;
+}
+
+textarea:focus {
+  outline: 0;
+  border: 3px solid #081a2a;
+  border-radius: 15px;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.alertaDoTexto{
+  color: #0a3871;
+  font-size: 20px;
+}
+
+.botoes{
+  display: flex;
+  margin: 0;
+  padding: 7% 5% 5% 0%;
+  height: 15%;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.criptografar,
+.descriptografar,
+.limpaTexto {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  width: 50%;
+  border-radius: 20px;
+  border: 1px solid #081a2a;
+}
+
+.criptografar {
+  background-color: #081a2a;
+  color: #FFFFFF;
+  transition: 0.3s transform;
+}
+
+.criptografar:hover {
+  background-color: #becae0;
+  color: #081a2a;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.descriptografar {
+  background-color: #081a2a;
+  color: #FFFFFF;
+  transition: 0.3s transform;
+}
+
+.descriptografar:hover {
+  background-color: #becae0;
+  color: #081a2a;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.limpaTexto {
+  background-color: #081a2a;
+  color: #FFFFFF;
+  transition: 0.3s transform;
+}
+
+.limpaTexto:hover {
+  background-color: #becae0;
+  color: #081a2a;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.caixaRespostaDeTexto{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  padding: 3% 3% 2% 3%;
+  width: 50%;
+  background-color: white;
+  box-shadow: 2px 2px 15px #5da5d5;
+  color: #013f69;
+}
+
+.semResposta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+}
+
+.semResposta img{
+  width: 70%;
+  margin-bottom: 9%;
+}
+
+.semResposta h3{
+  margin: 0;
+  margin-bottom: 3%;
+  padding: 0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.semResposta p{
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.comResposta{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  display: none;
+}
+
+.textoCodificado{
+  margin: 0;
+  padding: 0;
+  height: 85%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+textarea.textoCodificado{
+  border: none;
+}
+
+.copiaTexto{
+  margin: 0;
+  padding: 0;
+  height: 10%;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid #081a2a;
+  font-size: 1em;
+  background-color: #081a2a;
+  color: #FFFFFF;
+  transition: 0.3s transform;
+
+}
+
+.copiaTexto:hover{
+  background-color: #becae0;
+  color: #081a2a;
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+footer{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 4em;
+  width: 100%;
+  gap: 1em;
+  background: url("couro_azul.png");
+}
+
+footer p {
+  font-size: 0.8em;
+  color: #FFFFFF;
+}
+
+.icons a {
+  margin: 1em;
+  padding: 0;
+  height: 5em;
+}
+
+.githubIcon,
+.linkedinIcon {
+  margin: 0;
+  padding: 0;
+  height: 1.5em;
+  opacity: 80%;
+}
+
+@media (max-width: 480px) {
+
+  main {
+    display: inline;
+    width: 90%;
+    padding: 0% 2% 0% 2%;
+    gap: 1vh;
+  }
+
+  .titulo{
+    margin-top: 10%;
+    font-size: 1em;
+  }
+
+  .caixaDeTexto {
+    width: 100%;
+    height: 50%;
+    margin: 40px 0 25px 0;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100%;
+  }
+
+  textarea::placeholder{
+    text-align: center;
+  }
+
+  .textoEscrito{
+    text-align: center;
+  }
+
+  .alertaDoTexto {
+    height: 10%;
+    text-align: center;
+    margin: 50px 0 25px 0;
+  }
+
+  .botoes{
+    padding: 20px;
+  }
+
+  .criptografar,
+  .descriptografar,
+  .limpaTexto {
+    height: 50px;
+    width: 100%;
+    font-size: 0.9em;
+
+  }
+
+  .caixaRespostaDeTexto {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    margin: 10px 0 20px 0;
+  }
+
+  .semResposta img {
+    width: 40%;
+  }
+
+  .comResposta{
+    width: 100%;
+  }
+
+  .textoCodificado {
+    height: 80%;
+    text-align: center;
+  }
+
+  .copiaTexto {
+    height: 50%;
+    font-size: 1.2em;
+  }
+
+  footer{
+    text-align: center;
+  }
+}

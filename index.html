@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="background">
+        <header>
+            <div class="caixa">
+                <h1><img class="logoAlura" src="logo_alura.svg"></h1>
+                <h2 class="titulo">Decodificador - Alura</h2>
+            </div>
+        </header>
+        <main>
+            <div class="caixaDeTexto">
+                <textarea class="textoEscrito" placeholder="Codifique seu texto aqui!"></textarea>
+                <div class="alertaDoTexto">
+                    <p>&#187; Apenas letras minúsculas e sem acento!</p>
+                </div>
+                <div class="botoes">
+                    <button class="criptografar">Criptografar</button>
+                    <button class="descriptografar">Descriptografar</button>
+                <button class="limpaTexto" type="reset">Limpar Texto</button>
+                </div>
+            </div>
+            <div class="caixaRespostaDeTexto">
+                <div class="semResposta">
+                    <img class="lupa" src="lupa.svg">
+                    <h3>Nenhuma mensagem foi encontrada</h3>
+                    <p> Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>
+                <div class="comResposta">
+                    <textarea cols="0" rows="5" class="textoCodificado" readonly></textarea>
+                    <button class="copiaTexto">Copiar Texto</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <p>&#169; 2023 Tâmara Gomes. Todos os direitos reservados.</p>
+        <div class="icons">
+            <a href="https://github.com/auritamara" target="_blank">
+            <img src="icon_github.png" alt="GitHub" class="githubIcon"></a>
+            <a href="https://www.linkedin.com/in/auritamara/">
+            <img src="icon_linkedin.png" alt="LinkedIn" class="linkedinIcon"></a>
+        </div>
+    </footer>
+    <script src="Script/script.js"></script>
+</body>
+</html>
